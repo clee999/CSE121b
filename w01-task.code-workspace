@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "w01-task",
+			"path": "../../../../../Downloads/w01-task"
+		},
+		{
+			"name": "CSE121b",
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "w01-task"
+	}
+}
