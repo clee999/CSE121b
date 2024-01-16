@@ -21,7 +21,7 @@ const foodElement = document.getElementById("food");
 
 const yearElement = document.getElementById("year");
 
-const imageElement = "images/carllee.png."
+const imageElement = document.getElementById ("home");
 
 
 /* Step 4 - Adding Content */
@@ -36,19 +36,32 @@ imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
 
-let favouriteFood = ["Jerk Chicken and Rice amd Peas ", "Steak and Chips", "Salt fish fritter and Fried dumpling"];
+let favouriteFood = ["Jerk Chicken, ", "Rice and Peas, ", "Steak and Chips, ", "Salt fish fritters, "," Fried dumplings "];
 
-foodElement.innerHTML += `<br>${favouriteFood}</br>`;
+
+let foodContent = "";
+favouriteFood.forEach(food => {
+    foodContent += food
+});
+
+foodElement.innerHTML += `<br>${foodContent}</br>`;
+
+
 
 favouriteFood.shift();
 
-let foodContent = "";
-favouriteFood.forEach(food =>{
-    foodContent += `<br>${food}</br>`
+foodContent = "";
+favouriteFood.forEach(food => {
+    foodContent += food;
 });
+
+foodElement.innerHTML += `<br>${foodContent}</br>`;
 
 favouriteFood.pop();
 
-favouriteFood.forEach(food =>{
-    foodContent += `<br>${food}</br>`
+foodContent = "";
+favouriteFood.forEach(food => {
+    foodContent += food;
 });
+
+foodElement.innerHTML += `<br>${foodContent}</br>`;
