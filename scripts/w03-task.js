@@ -41,7 +41,7 @@ const multiplyNumbers = () => {
     let multiplyNumber2 = Number(document.querySelector('#factor2').value);
     document.querySelector('#product').value = multiply(multiplyNumber1, multiplyNumber2)
 }
-document.querySelector('#multipyNumbers').addEventListener('click', multiplyNumbers);
+document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
 
 
 
@@ -68,7 +68,7 @@ document.getElementById('getTotal').addEventListener('click', function() {
 
     // Check if the membership checkbox is checked
     var isMember = document.getElementById('member').checked;
-r
+
     var total = subtotal;
 
     if (isMember) {
@@ -88,11 +88,11 @@ let numberArray = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 
 /* Output Odds Only Array */
 
-document.queryselector('#odds').innerHTML = numberArray.filter(number => number % 2 !== 0)
+document.querySelector('#odds').innerHTML = numberArray.filter(number => number % 2 !== 0)
 
 /* Output Evens Only Array */
 
-document.queryselector('#evens').innerHTML = numberArray.filter(number => number % 2 === 0)
+document.querySelector('#evens').innerHTML = numberArray.filter(number => number % 2 === 0)
 
 /* Output Sum of Org. Array */
 
@@ -106,4 +106,4 @@ document.querySelector('#multiplied').innerHTML = numberArray.map((number => num
 /* Output Sum of Multiplied by 2 Array */
 
 
-document.querySelector('#sumOfmultiplied').innerHTML = numberArray.map(number => number * 2).reduce((acc, curr) => acc + curr, 0)
+document.querySelector('#sumOfMultiplied').innerHTML = numberArray.map(number => number * 2).reduce((acc, curr) => acc + curr, 0)
