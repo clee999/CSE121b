@@ -12,8 +12,13 @@ async function getPokemon(url) {
   }
 }
 function doStuff(data) {
+  const outputElement = document.querySelector("#output");
   results = data;
+  const html = `<h2> ${results.name}</h2>;
+     <img src= "${results.sprites.front_default}" alt="Image of ${results.name}">`;
+  outputElement.innerHTML = html;
   console.log("first: ", results);
+  
 }
 getPokemon(url);
 console.log("second: ", results);
